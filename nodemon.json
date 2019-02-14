@@ -1,0 +1,7 @@
+{
+  "watch": [ "src" ],
+  "restartable": "rs",
+  "ext": "ts,js,json,gql",
+  "ignore": ["src/schema.gql"],
+  "exec": "ts-node --files ./src/index.ts"
+}

@@ -1,0 +1,27 @@
+{
+  "name": "test-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon",
+    "debug": "ndb npm run dev",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ndb": "^1.0.42",
+    "nodemon": "^1.18.10",
+    "ts-node": "^8.0.2",
+    "typescript": "3.3.3"
+  },
+  "dependencies": {
+    "apollo-server": "^2.4.0",
+    "class-transformer": "^0.2.0",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^0.16.0"
+  }
+}
