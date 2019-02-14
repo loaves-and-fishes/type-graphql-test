@@ -8,6 +8,7 @@
     "dev": "nodemon",
     "debug": "ndb npm run dev",
     "build": "tsc",
+    "now-build": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ilya Radchenko",
