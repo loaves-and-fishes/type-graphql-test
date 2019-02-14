@@ -17,6 +17,7 @@ async function bootstrap() {
   const server = new ApolloServer({
     schema,
     // enable GraphQL Playground
+    introspection: true,
     playground: true,
   });
 
