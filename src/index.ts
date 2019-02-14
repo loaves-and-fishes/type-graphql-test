@@ -10,7 +10,7 @@ async function bootstrap() {
   const schema = await buildSchema({
     resolvers: [ChurchResolver],
     // automatically create `schema.gql` file with schema definition in current folder
-    emitSchemaFile: path.resolve('./schema.gql'),
+    emitSchemaFile: path.resolve('/tmp/schema.gql'),
   });
 
   // Create GraphQL server
