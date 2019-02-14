@@ -1,7 +1,10 @@
-import { Field, ObjectType } from 'type-graphql';
+import { Field, ObjectType, ID } from 'type-graphql';
 
 @ObjectType({ description: 'Object representing a church' })
 export class Church {
+  @Field(() => ID)
+  id: string;
+
   @Field()
   name: string;
 

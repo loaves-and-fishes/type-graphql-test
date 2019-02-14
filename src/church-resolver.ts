@@ -5,6 +5,7 @@ import {
   Mutation,
 } from 'type-graphql';
 import { plainToClass } from 'class-transformer';
+import nanoid from 'nanoid';
 
 import { Church } from './church-type';
 import { ChurchInput } from './church-input';
@@ -27,6 +28,7 @@ export class ChurchResolver {
   @Mutation(() => Church)
   async addChurch(@Arg("church") churchInput: ChurchInput): Promise<Church> {
     const church = plainToClass(Church, {
+      id: nanoid(),
       name: churchInput.name,
     });
     await this.items.push(church);
